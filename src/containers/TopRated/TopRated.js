@@ -52,7 +52,7 @@ class TopRated extends Component {
             onChange={() => console.log('onChange')}
             onRequestSearch={() => console.log('onRequestSearch')}
             style={{
-              margin: '0 150px',
+              margin: '0 300px',
               maxWidth: 800,
             }}
           />
