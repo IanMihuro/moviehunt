@@ -40,7 +40,7 @@ class AddMovieForm extends Component {
   state = {
     id: uuid.v4(),
     original_title: '',
-    vote_average: null,
+    vote_average: 0,
     release_date: '',
     poster_path: '',
     overview: '',
@@ -161,7 +161,7 @@ class AddMovieForm extends Component {
                   margin="normal"
                   variant="outlined"
                   type="text"
-                  placeholder="Movie Poster"
+                  placeholder="Movie Poster Path"
                   onChange={this.handleChange}
                   InputProps={{
                     classes: {

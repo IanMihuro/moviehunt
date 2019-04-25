@@ -197,12 +197,12 @@ class CenteredTabs extends React.Component {
               <div>
                 <Button color="inherit" onClick={this.openLoginDialog}>Login</Button>
                 <Fab
-                variant="extended"
-                size="medium"
-                aria-label="sign-up"
-                style={{ color: 'blue', marginLeft: '30px'}}
+                  variant="extended"
+                  size="medium"
+                  aria-label="sign-up"
+                  style={{ color: 'blue', marginLeft: '30px'}}
                 >          
-                Sign up
+                  Sign up
                 </Fab>
               </div> 
             }          

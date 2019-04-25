@@ -42,8 +42,6 @@ class TopRated extends Component {
     const { isLoggedIn } = this.props;
     const placeHolder = <h3> No Movies to dispay</h3>;
 
-    // console.log('[Toprated]this.props', this.props);
-
     return(
       <div> 
         <div style={{ display:'flex', flexDirection: 'row', alignItems:'center', justifyContent: 'space-between', width:'100%'}}>

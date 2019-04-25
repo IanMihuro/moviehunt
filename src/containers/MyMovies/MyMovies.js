@@ -2,6 +2,7 @@ import React,  {Component} from 'react';
 import { connect } from "react-redux";
 
 import Card from '../../components/card/card.js';
+import SearchBar from 'material-ui-search-bar';
 
 const mapStateToProps = state => {
   return { myMovies: state.myMovies };
@@ -9,23 +10,21 @@ const mapStateToProps = state => {
 
 class MyMovies extends Component {
 
-  state = {
-    myMovies: [],
-  }
-
-  componentDidMount() {
-    this.setState({
-      myMovies: this.props.myMovies,
-    });
-  }
   render() {
-    // const { myMovies } = this.state;
     const { isLoggedIn, myMovies, onNotifyDelete } = this.props;
     const placeHolder = <span>No Movies Yet</span>;
     return(
       <div style={{height: '100vh'}}>
         <div style={{ display:'flex', flexDirection: 'row', alignItems:'center', justifyContent: 'space-between', width:'100%'}}>
-          <h2> My movies</h2>          
+          <h2> My movies</h2>
+          <SearchBar
+            onChange={() => console.log('onChange')}
+            onRequestSearch={() => console.log('onRequestSearch')}
+            style={{
+              margin: '0 300px',
+              maxWidth: 800,
+            }}
+          />          
         </div>        
         <div style={{ display: 'flex', direction: 'row', marginTop: '150px', marginBottom: '150px', flexWrap: 'wrap'}}>
           { 
